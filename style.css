@@ -1,0 +1,97 @@
+.game {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  
+}
+
+.textual {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.option,
+.slot {
+  display: inline-block;
+  border-radius: 20%;
+  background-color: lightgrey;
+}
+
+#chances {
+  display: inline-block;
+  background-color: white;
+  border-radius: 3px 0 0 3px;
+  padding: 15px 30px;
+  font-size: 0;
+}
+
+.chance { margin-top: 15px; }
+
+.option,
+.code .slot,
+.chance .slot {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.code .slot + .slot,
+.chance .slot + .slot { margin-left: 10px; }
+
+.code {
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+
+#effects {
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 15px 6px;
+  background-color: white;
+  border-radius: 0 3px 3px 0;
+  font-size: 0;
+}
+
+.effect {
+  height: 32px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.effect .row { height: 10px; }
+.effect .row + .row { margin-top: 5px; }
+
+.effect .slot {
+  width: 10px;
+  height: 10px;
+}
+
+.effect .slot + .slot { margin-left: 5px; }
+
+.effect + .effect { margin-top: 22px; }
+.hit { background-color: #000; }
+.almost { background-color: red; }
+
+
+#options {
+  margin: 0 auto;
+  padding: 25px 35px;
+  display: block;
+  font-size: 0;
+}
+
+#options button + button {
+  margin-left: 10px;
+}
+
+.green { background: green; }
+.red { background: red; }
+.yellow { background: yellow; }
+.purple { background: purple; }
